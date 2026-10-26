@@ -39,7 +39,7 @@ export function diagram(term,title=''){
  }else if(term==='perpendicular lines'||term==='perpendicular')result=line(65,285,295,285,'both',3)+line(180,185,180,385,'both',3)+'<path d="M180 269H196V285" fill="none" stroke-width="2"/>'+text(220,260,'90°');
  else if(term==='parallel lines')result=line(65,245,295,245,'both',3)+line(65,325,295,325,'both',3)+'<path d="M180 245V325 M174 251L180 245L186 251 M174 319L180 325L186 319" fill="none" stroke-width="1.5"/>'+text(180,366,'Constant separation',12);
  else if(term==='triangle')result=polygon('180,190 75,355 285,355');
- else if(term==='quadrilateral')result=polygon(title==='Kite outline'?'180,190 265,270 180,375 95,270':title==='Slanted tile'?'115,215 285,215 245,350 75,350':'105,215 260,240 280,350 75,350');
+ else if(term==='quadrilateral')result=polygon(title==='Kite outline'?'180,190 265,270 180,375 95,270':title==='Slanted tile'?'115,215 285,215 245,350 75,350':title==='Rectangular window'?'100,215 260,215 260,350 100,350':title==='Trapezium panel'?'115,215 245,215 280,350 80,350':'105,215 260,240 280,350 75,350');
  else if(term==='polygon'){
   const n=title==='Octagonal sign'?8:title==='Pentagonal badge'?5:6;
   result=title==='Irregular polygon'?polygon('90,240 205,195 280,280 235,355 100,335'):polygon(Array.from({length:n},(_,i)=>{const a=-Math.PI/2+i*2*Math.PI/n;return `${180+95*Math.cos(a)},${285+95*Math.sin(a)}`;}).join(' '));

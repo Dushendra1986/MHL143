@@ -25,3 +25,5 @@ Limits: mathematical correctness and generated media fidelity require human insp
 - Python's ZIP integrity check passed. All 225 downloaded SVGs parsed as XML and all 25 project backups were present in the archive.
 - Desktop and mobile screenshots were inspected. Geometry checks include the 240° reflex sweep, 90° right angle, full tangent with one contact, secant with two crossings, exact half-circle boundaries and finite versus infinite line indicators.
 - Drafts are independent per term. Older saved projects migrate without fabricated review approval. No raw private archive is included in the published app.
+- Additional browser check confirmed that reordering cards resets production statuses and feature/source/mathematics approval. Adding or removing a card also invalidates sequence review.
+- GitHub Actions independently passed the 19 tests and static artifact build. Initial deployment failed because Pages was not enabled; Pages is now configured for GitHub Actions after the owner's settings change.
