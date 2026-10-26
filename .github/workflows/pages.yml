@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '24'
       - run: npm test
-      - run: mkdir public && cp index.html style.css app.js model.js public/
+      - run: mkdir public && cp index.html style.css app.js model.js glossary.js public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
