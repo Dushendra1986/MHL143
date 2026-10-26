@@ -17,3 +17,11 @@ Limits: mathematical correctness and generated media fidelity require human insp
 - All 13 model tests passed, including six-term sequencing, nine-card sets, backward-compatible backups, exact Arc example distinctions, Semicircle/Diameter constraints, ten template palettes, SVG escaping, and rejection of overly long sheet text.
 - Chromium browser checks passed for Semicircle startup, nine cards, ten successfully loaded previews, template selection and approval resets, Arc presets, valid 1080×1920 SVG download, description download, numeric episode input, reload persistence, and mobile overflow at 390 px. No uncaught browser errors.
 - The mobile screenshot was inspected. Template sheets explicitly identify themselves as schematic drafts; no original artwork is claimed.
+
+## 25-glossary collection
+
+- All 19 model tests passed. The catalogue has 25 distinct numbered entries, each with nine cards and four examples; all 225 SVG sheets render without missing diagrams or oversized default callouts.
+- Chromium checks passed for searching, topic filtering and empty states; browsing every entry; per-term edits and reload persistence; collection backup/restore and rejected invalid backups; ten template directions; ZIP download; and no mobile horizontal overflow or uncaught browser errors.
+- Python's ZIP integrity check passed. All 225 downloaded SVGs parsed as XML and all 25 project backups were present in the archive.
+- Desktop and mobile screenshots were inspected. Geometry checks include the 240° reflex sweep, 90° right angle, full tangent with one contact, secant with two crossings, exact half-circle boundaries and finite versus infinite line indicators.
+- Drafts are independent per term. Older saved projects migrate without fabricated review approval. No raw private archive is included in the published app.

@@ -22,3 +22,7 @@ Radius, Chord and some Diameter examples are new draft suggestions where the arc
 SVG downloads are 1080×1920 schematic layout sheets. They do not reconstruct missing images or render real-life objects. Each identifies itself as a draft. Excess text is rejected rather than silently cropped. Prompt exports are deterministic templates and require external media production and visual inspection.
 
 The reference storyboard website was blocked by the execution proxy (HTTP 403). Its exact visual design and feature parity remain unverified. The archive now supplies the glossary workflow, not evidence about that site's implementation.
+
+## 25-entry continuation
+
+The current request expands the app to 25 entries. The original six titles and numbering remain unchanged. Entries #007–#025 are newly authored geometry lessons, explicitly identified in their source notes as proposed continuations. Every entry has nine card briefs, a definition, misconception, invariant, four examples, a mathematical SVG diagram and a description template. Abstract concepts such as lines and points distinguish ideal mathematics from physical models. Reflex angles explicitly mark the larger sweep; polygons use the simple, non-self-intersecting convention.

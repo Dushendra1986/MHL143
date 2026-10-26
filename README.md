@@ -1,10 +1,18 @@
-# Math Logic Hub · Visual Glossary Studio
+# Math Logic Hub · 25 Visual Glossaries
 
-A responsive, local-first static app for defining mathematical concepts, collecting text references, planning scenes, reviewing production readiness, and exporting project backups and standalone image/video prompt templates. No backend, API key, dependency installation or AI service is required.
+A responsive, local-first geometry studio following the supplied Visual Glossary archive: restrained blue/white styling, 9:16 cards, a prominent mathematical feature, and title → term → definition → four real-life connections → recap → outro.
 
-## Run and check
+## Collection
 
-Use the existing checkout; no extra worktree is needed.
+The original six archived terms are preserved: Radius, Chord, Diameter, Circumference, Arc and Semicircle. Nineteen proposed additions complete entries #007–#025: Sector, Circular segment, Tangent, Secant, Point, Line, Line segment, Ray, Angle, Acute angle, Right angle, Obtuse angle, Straight angle, Reflex angle, Perpendicular lines, Parallel lines, Triangle, Quadrilateral and Polygon.
+
+Browse/search all 25 entries, filter by topic, preview every card, select one of ten template directions, edit production briefs, and save independent per-term drafts. Download an individual 9:16 SVG, a complete term ZIP, or all 225 sheets with project JSON, prompt briefs and descriptions. Collection JSON backup/restore preserves browser edits. Older single-project backups still work.
+
+The SVG sheets are deterministic mathematical diagrams and layouts, not photographs or reconstructions of the missing original images. Real-life objects are specified in the editable production briefs. Exports are drafts, and approval is never inferred from the archive. No voiceover is invented.
+
+## Run and validate
+
+Use the existing checkout; no additional worktree is needed. No dependency installation or API key is required.
 
 ```sh
 cd /workspace/MHL143
@@ -12,18 +20,16 @@ npm test
 npm start
 ```
 
-Serve over HTTP; opening the HTML directly from disk does not support the JavaScript modules. The server uses port 8000. Check that the page renders, add a source and scene, and round-trip an exported JSON backup. Processes need restarting in new sessions.
+The server uses port 8000. Serve over HTTP; direct HTML file opening cannot load JavaScript modules. Restart the server in new sessions. Browser QC covers library navigation, filters, all 225 card previews, independent term editing, reload persistence, collection backup/restore, SVG and ZIP downloads, invalid imports, template selection, and mobile overflow.
 
 ## Publish
 
-The GitHub Actions workflow tests and deploys only the five public app assets to GitHub Pages on pushes to `main`. In repository Settings → Pages select **GitHub Actions** as the source, then run the workflow if needed. Pages availability depends on repository visibility and account plan. Never add private sources or chat exports to the public repository. If deployment succeeds the conventional URL is `https://Dushendra1986.github.io/MHL143/`; verify it before sharing as live.
+GitHub Actions tests and publishes only the public app assets to GitHub Pages on pushes to `main`. Pages should be configured with **GitHub Actions** as the source. Expected site: `https://dushendra1986.github.io/MHL143/`. Deployment readiness is determined by the current workflow result and HTTP/browser validation, not by the URL alone.
 
 ## Data and review boundaries
 
-Data stays in this browser's localStorage, which is not encrypted and can be cleared. Use JSON exports for backups. Do not store secrets or sensitive personal information on a shared browser. No remote fonts, analytics, API requests, or uploaded reference files are required. Project imports are schema-validated and displayed as text, never inserted as HTML. Source uploads accept bounded plain-text, Markdown and CSV files only. PDF, image and private ChatGPT history analysis are not implemented.
+Drafts stay in this browser's localStorage; storage is unencrypted, limited and can be cleared. Export collection backups. Do not enter secrets or sensitive personal information on a shared browser. No analytics, remote fonts, AI service or cloud source uploads are required.
 
-Quality checks detect incomplete fields and review flags; they do not establish mathematical truth or rendered fidelity. Production status is a manual record, not evidence of generation. Editing concept or scene content resets approval records. Prompt exports include outstanding checks and preserve exact speech; empty speech produces a silent scene.
+Imports are schema-validated and rendered as text. Source uploads support bounded text, Markdown and CSV only. PDF/image analysis and access to private ChatGPT history are not provided. App quality checks detect incomplete fields and unset review flags; they cannot certify mathematical truth or rendered fidelity. Edited content resets relevant review gates. Template changes reset production statuses. Exported prompts include outstanding checks and exact speech, or explicit silence.
 
-The supplied Visual Glossary chat archive has been reviewed. Six numbered term presets, ten selectable template directions, per-card 9:16 schematic SVG downloads, and description exports now follow its workflow. See ARCHIVE_ANALYSIS.md for source coverage and limitations. The original generated images were not embedded in that archive; the templates are new schematic interpretations. The reference storyboard URL returned proxy HTTP 403, so exact design parity remains unverified. The perpendicular example remains illustrative.
-
-Existing version 1 project backups migrate with the new template and feature review gates unset. Approval is never inferred from the archive.
+See ARCHIVE_ANALYSIS.md for original source coverage and QC.md for validation evidence. The raw private chat archive is not published in this repository. New entries #007–#025 are authored continuations, not claims about additional approved archive content.
